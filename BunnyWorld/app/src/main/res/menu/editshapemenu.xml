@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--TODO: @Zhan @Qiu-->
+    <item android:title="Set Background"
+        android:id="@+id/setBackground"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:title="Image"
+                android:id="@+id/addBG"
+                app:showAsAction = "ifRoom">
+                <menu>
+                    <item android:title="Harry Potter"
+                        android:id="@+id/bg1"
+                        android:icon="@drawable/bg1icon"
+                        app:showAsAction="always" />
+                    <item android:title="Disneyland"
+                        android:id="@+id/bg2"
+                        android:icon = "@drawable/bg2icon"
+                        app:showAsAction="always"/>
+                    <item android:title="Up"
+                        android:id="@+id/bg3"
+                        android:icon = "@drawable/bg3icon"
+                        app:showAsAction="always"/>
+                    <item android:title="Chinese Style"
+                        android:id="@+id/bg4"
+                        android:icon = "@drawable/bg4icon"
+                        app:showAsAction="always"/>
+                    <item android:title="clear background"
+                        android:id="@+id/clearbg"
+                        app:showAsAction="always"/>
+                </menu>
+            </item>
+            <item android:title="Music"
+                android:id="@+id/BGM">
+                <menu>
+                    <item android:title="No BGM"
+                        android:id="@+id/empty"
+                        android:onClick="setBGM" />
+                    <item android:title="Ov Moi Omm-Interovmoiommosis"
+                        android:id="@+id/ov_moi_omm_interovmoiommosis"
+                        android:onClick="setBGM" />
+                    <item android:title="Philip Ravenel-The Greatest Century"
+                        android:id="@+id/philip_ravenel_thegreatestcentury"
+                        android:onClick="setBGM" />
+                    <item android:title="Philip Ravenel-Wanderer of Wonders"
+                        android:id="@+id/philip_ravenel_wandererofwonders"
+                        android:onClick="setBGM" />
+                    <item android:title="Siddhartha Corsus-A Song for Peace"
+                        android:id="@+id/siddhartha_corsus_asongforpeace"
+                        android:onClick="setBGM" />
+                    <item android:title="Voodoo Suite-Little Grass Shack"
+                        android:id="@+id/voodoo_suite_littlegrassshack"
+                        android:onClick="setBGM" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+    <item android:title = "Create Shape"
+        android:id="@+id/createShape"
+        app:showAsAction = "ifRoom">
+        <menu>
+            <item android:title = "Image Shape"
+                android:id="@+id/imageShape">
+                <menu>
+                    <item android:title="carrot"
+                        android:id="@+id/carrot"
+                        android:icon="@drawable/carroticon"
+                        app:showAsAction="always" />
+                    <item android:title="carrot2"
+                        android:id="@+id/carrot2"
+                        android:icon = "@drawable/carrot2icon"
+                        app:showAsAction="always"/>
+                    <item android:title="death"
+                        android:id="@+id/death"
+                        android:icon = "@drawable/deathicon"
+                        app:showAsAction="withText"/>
+                    <item android:title="duck"
+                        android:id="@+id/duck"
+                        android:icon = "@drawable/duckicon"
+                        app:showAsAction="always"/>
+                    <item android:title="fire"
+                        android:id="@+id/fire"
+                        android:icon = "@drawable/fireicon"
+                        app:showAsAction="always"/>
+                    <item android:title="mystic"
+                        android:id="@+id/mystic"
+                        android:icon = "@drawable/mysticicon" />
+                </menu>
+            </item>
+            <item android:title = "Text Shape"
+                android:id="@+id/textShape" />
+            <item android:title = "Default Shape"
+                android:id="@+id/defaultShape"/>
+            <item android:title = "Paste"
+                android:id="@+id/pasteShape"/>
+        </menu>
+    </item>
+    <item android:title = "Edit current Shape"
+        app:showAsAction = "ifRoom">
+        <menu>
+            <item android:title="Create Script">
+                <menu>
+                    <item android:title="on Click" android:onClick="createOnClick"/>
+                    <item android:title="on Enter" android:onClick="createOnEnter"/>
+                    <item android:title="on Drop" android:onClick="selectShape"/>
+                </menu>
+            </item>
+
+            <item android:title="Show Script"
+                android:id="@+id/showScriptItem"/>
+            <item android:title="Set Property"
+                android:id="@+id/setPropertyItem"/>
+            <item android:title="Set Text"
+                android:id="@+id/setTextItem"/>
+            <item android:title="Change Image"
+                android:id="@+id/changeImageItem"/>
+            <item android:title="Copy Shape"
+                android:id="@+id/copyShapeItem"/>
+            <item android:title="Delete"
+                android:id="@+id/deleteShapeItem"/>
+        </menu>
+    </item>
+</menu>

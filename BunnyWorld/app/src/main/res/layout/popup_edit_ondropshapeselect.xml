@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Please select the shape to be dropped on:"
+        android:paddingBottom="10dp"/>
+    <Spinner
+        android:id="@+id/shapes"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:background="#ccc"
+        android:paddingHorizontal="10dp"
+        android:layout_marginEnd="5dp"
+        android:popupBackground="@color/cardview_light_background"/>
+
+    <GridLayout
+        android:id="@+id/PageMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_gravity="fill"
+        android:padding="10dp"
+        android:useDefaultMargins="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="Select"
+            android:id="@+id/selectBtn"
+            android:onClick="createOnDrop"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="Cancel"
+            android:id="@+id/cancelBtn"
+            android:onClick="closeSelectShape"/>
+    </GridLayout>
+
+</LinearLayout>

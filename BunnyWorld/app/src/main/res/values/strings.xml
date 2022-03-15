@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Bunny World</string>
+    <string name="gameTitle">Bunnyworld</string>
+    <string name="PLAY">PLAY</string>
+    <string name="EDIT">EDIT</string>
+    <string name="DELETE">DELETE</string>
+    <string name="RESETDB">RESETDB</string>
+
+    <string-array name="gameChoiceArray">
+        <item>bunnyworld</item>
+    </string-array>
+
+    <string-array name="imageName_array">
+        <item>carrot</item>
+        <item>carrot2</item>
+        <item>death</item>
+        <item>duck</item>
+        <item>fire</item>
+        <item>mystic</item>
+        <item>no image</item>
+    </string-array>
+
+    <string-array name="sound_array">
+        <item />
+        <item>carrotcarrotcarrot</item>
+        <item>evillaugh</item>
+        <item>fire</item>
+        <item>hooray</item>
+        <item>munch</item>
+        <item>munching</item>
+        <item>woof</item>
+    </string-array>
+
+    <string name="CREATEPAGE">CREATE PAGE</string>
+    <string name="CHANGEPAGE">CHANGE PAGE</string>
+    <string name="RENAMEPAGE">RENAMEPAGE</string>
+    <string name="CLEARPAGE">CLEAR PAGE</string>
+    <string name="DELETEPAGE">DELETE PAGE</string>
+</resources>

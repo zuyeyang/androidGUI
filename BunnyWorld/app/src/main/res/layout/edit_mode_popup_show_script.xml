@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:padding="10px">
+
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Show Script"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/onClickCheckBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="On Click"
+            ></CheckBox>
+        <TextView
+            android:id="@+id/onClickScript"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/onEnterCheckBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="On Enter"
+            ></CheckBox>
+        <TextView
+            android:id="@+id/onEnterScript"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/onDropCheckBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="On Drop"
+            ></CheckBox>
+        <Spinner
+            android:id="@+id/onDropSpinner"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:layout_margin="5dp"
+            android:id="@+id/deleteScriptPopupBtn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_margin="5dp"
+            android:id="@+id/closeShowScriptPopupBtn"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

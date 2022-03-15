@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:padding="10px">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Set Property"/>
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Shape Type:"
+            />
+        <TextView
+            android:id="@+id/shapeTypePopupInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+         <TextView
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:text="Shape X:"
+             />
+         <EditText
+             android:id="@+id/shapeXPopupInput"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:inputType="numberDecimal|number"
+             />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Shape Name:"
+            />
+        <EditText
+            android:id="@+id/shapeNamePopupInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Shape Y:"
+            />
+        <EditText
+            android:id="@+id/shapeYPopupInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Image Name:"
+            />
+        <TextView
+            android:id="@+id/imageNamePopup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Shape Width:"
+            />
+        <EditText
+            android:id="@+id/shapeWidthPopupInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|number"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tip:"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:text="Width and Height and proportional scaling are invalid in text shape"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Shape Height:"
+            />
+        <EditText
+            android:id="@+id/shapeHeightPopupInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Movable"
+            android:id="@+id/movablePopupCheckbox"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hidden"
+            android:id="@+id/hiddenPopupCheckbox"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="proportional scaling（%）:"
+            />
+        <EditText
+            android:id="@+id/scalingPopupInput"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="100.00"
+            android:inputType="numberDecimal|number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET"
+            android:layout_margin="5dp"
+            android:id="@+id/setPropertyPopupBtn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_margin="5dp"
+            android:id="@+id/closeSetProperShapePopupBtn"/>
+    </LinearLayout>
+
+</LinearLayout>

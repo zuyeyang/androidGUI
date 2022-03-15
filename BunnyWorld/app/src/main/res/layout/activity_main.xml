@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/gameTitle"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--CHANGED: ADD NEW GAME BUTTON-->
+            <!--TODO: Update it with game name-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/gameChoiceSpinner"
+                    android:layout_width="300sp"
+                    android:layout_height="52sp"
+                    android:layout_marginRight="5sp"
+                    android:background="#ccc"
+                    android:entries="@array/gameChoiceArray"
+                    android:paddingHorizontal="10dp" />
+
+                <Button
+                    android:id="@+id/PLAY"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSubmitGameMode"
+                    android:text="@string/PLAY" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/NEWGAME"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="NEW GAME" />
+            <!--CHANGED: ADD NEW GAME BUTTON-->
+
+            <Button
+                android:id="@+id/EDIT"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:onClick="onSubmitEditMode"
+                android:text="@string/EDIT" />
+
+            <Button
+                android:id="@+id/DELETE"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="@string/DELETE" />
+
+            <Button
+                android:id="@+id/EXPORT"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="SOURCE" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/RESETDB"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text="@string/RESETDB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10sp"/>
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/editPage"
+    tools:context=".EditMode">
+
+    <!--all file changed 03072022-->
+    <edu.stanford.cs108.bunnyworld.EditView
+        android:id="@+id/editView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <GridLayout
+        android:id="@+id/PageMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_marginBottom="-6dp"
+        android:layout_marginTop="-1dp"
+        android:columnCount="4"
+        android:rowCount="2">
+
+
+        <Button
+            android:id="@+id/CREATEPAGE"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="-1dp"
+            android:text="@string/CREATEPAGE" />
+
+        <Button
+            android:id="@+id/CHANGEPAGE"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="-1dp"
+            android:text="@string/CHANGEPAGE" />
+
+        <Button
+            android:id="@+id/RENAMEPAGE"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="-1dp"
+            android:text="RENAME PAGE" />
+
+        <Button
+            android:id="@+id/CLEARPAGE"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/CLEARPAGE" />
+
+        <Button
+            android:id="@+id/DELETEPAGE"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/DELETEPAGE" />
+
+        <Button
+            android:id="@+id/SAVEGAME"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="2dp"
+            android:text="SAVE GAME" />
+
+        <TextView
+            android:id="@+id/currPageName"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:text="currPageName"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/currGameName"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:text="currGameName"
+            android:textSize="15sp" />
+
+    </GridLayout>
+    <!--TODO: @Zhan @Qiu Check the Menu File, Need to investigate how to call menu items to activity-->
+</LinearLayout>
